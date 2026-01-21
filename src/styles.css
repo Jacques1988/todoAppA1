@@ -14,3 +14,10 @@
     width: 100%;
     max-width: 1450px;
 }
+
+
+@media (max-width:1024px) {
+    .teaser {
+        font-size: 2rem;
+    }
+}
