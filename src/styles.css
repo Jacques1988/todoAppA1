@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+.teaser {
+    font-size: 3rem;
+    color: darkred;
+}
+
+.content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: blue; */
+    width: 100%;
+    max-width: 1450px;
+}
