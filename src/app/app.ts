@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
+import { Filter } from './filter/filter';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [Filter],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
