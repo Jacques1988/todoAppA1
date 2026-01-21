@@ -7,3 +7,16 @@
 .content-container {
     align-items: center;
 }
+
+
+
+@media (max-width:480px) {
+
+    .content-container {
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        display: none;
+    }
+}
