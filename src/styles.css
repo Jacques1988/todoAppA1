@@ -2,7 +2,6 @@
 
 .teaser {
     font-size: 3rem;
-    color: darkred;
 }
 
 .content-container {
@@ -19,5 +18,9 @@
 @media (max-width:1024px) {
     .teaser {
         font-size: 2rem;
+    }
+
+    .content-container {
+        padding: 0 1rem;
     }
 }
