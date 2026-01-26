@@ -1,8 +1,8 @@
 <section class="content-container">
-  <app-teaser [teaserText]="'Filter Controls:'"></app-teaser>
+  <app-teaser [teaserText]="teaser()"></app-teaser>
   <div class="button-container">
-    <button class="btn btn-primary">All Tasks</button>
-    <button class="btn btn-primary">Completed</button>
-    <button class="btn btn-primary">Incomplete</button>
+    <app-main-button [btnText]="'All Task'"></app-main-button>
+    <app-main-button [btnText]="'Complete'"></app-main-button>
+    <app-main-button [btnText]="'Incomplete'"></app-main-button>
   </div>
 </section>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Teaser } from '../shared/components/teaser/teaser';
 
 @Component({
@@ -7,4 +7,6 @@ import { Teaser } from '../shared/components/teaser/teaser';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {}
+export class Header {
+  teaser = signal<string>('My Tasks Application');
+}
