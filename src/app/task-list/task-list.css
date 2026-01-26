@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group {
+    width: 100%;
+    background-color: blue;
+}
+
+.task-checkbox {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-right: 1rem;
+    position: relative;
+}
+
+
+.task-text {
+    min-width: 300px;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.status-text {
+    min-width: 300px;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}

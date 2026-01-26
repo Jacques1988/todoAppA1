@@ -5,16 +5,11 @@
 }
 
 
-.content-container {
-    margin-top: 5rem;
-}
-
 .input-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /*  background-color: red; */
 }
 
 .input-field {
