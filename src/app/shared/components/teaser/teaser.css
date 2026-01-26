@@ -1,4 +1,10 @@
 .teaser {
     font-size: 3rem;
-    color: purple;
+    color: rgb(66, 56, 56);
+}
+
+@media (max-width:480px) {
+    .teaser {
+        font-size: 2rem;
+    }
 }
