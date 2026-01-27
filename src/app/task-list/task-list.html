@@ -1,15 +1,6 @@
 <section class="content-container">
   <app-teaser [teaserText]="teaser()"></app-teaser>
   <ul class="list-group">
-    <li class="list-group-item">
-      <input class="task-checkbox" type="checkbox" />
-      <span class="task-text">Einkaufen</span>
-      <span class="status-text">Incomplete</span>
-    </li>
-    <li class="list-group-item">
-      <input class="task-checkbox" type="checkbox" />
-      <span class="task-text">Einkaufen</span>
-      <span class="status-text">Incomplete</span>
-    </li>
+    <app-task-component></app-task-component>
   </ul>
 </section>
