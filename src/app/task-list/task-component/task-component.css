@@ -1,0 +1,57 @@
+.list-group-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.task-checkbox {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.task-checkbox:checked::after {
+    content: "✓";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 3rem;
+    color: #ac25fb;
+}
+
+
+.task-text {
+    min-width: 300px;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.status {
+    min-width: 300px;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+
+@media (max-width:768px) {
+    .status {
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    .task-text {
+        min-width: unset;
+        width: 200px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

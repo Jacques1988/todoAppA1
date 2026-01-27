@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    padding-bottom: 100px;
+}
+
+.list-group {
+    width: 100%;
+}

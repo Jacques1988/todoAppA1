@@ -11,6 +11,7 @@
     width: 100%;
     max-width: 1450px;
     padding: 0 3rem;
+    margin-top: 5rem;
 }
 
 
@@ -21,5 +22,11 @@
 
     .content-container {
         padding: 0 1rem;
+    }
+}
+
+@media (max-width:678px) {
+    .content-container {
+        margin-top: 2rem;
     }
 }
