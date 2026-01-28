@@ -27,7 +27,7 @@ export class TaskService {
   updateTask(todo: Task) {
     this.taskList = this.taskList.map((task) => {
       if (task.id === todo.id) {
-        return { ...task, task: todo };
+        return { ...task, ...todo };
       }
       return task;
     });
