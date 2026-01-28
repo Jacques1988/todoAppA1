@@ -12,4 +12,15 @@ export class TaskService {
   getAllTasks() {
     return this.tasks;
   }
+
+  addTask(taskName: string) {
+    const newTask = {
+      id: this.taskList.length + 1,
+      task: taskName,
+      status: 'incomplete',
+      checked: false,
+    };
+
+    this.taskList.push(newTask);
+  }
 }
