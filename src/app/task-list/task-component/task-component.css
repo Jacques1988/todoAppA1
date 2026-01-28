@@ -39,6 +39,10 @@
     margin-right: 1rem;
 }
 
+.text-stroked {
+    text-decoration: line-through;
+}
+
 
 @media (max-width:768px) {
     .status {
