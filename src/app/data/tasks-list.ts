@@ -19,7 +19,7 @@ export let taskList = [
   },
   {
     id: 4,
-    task: 'blumen goeßen',
+    task: 'blumen gießen',
     status: 'incomplete',
     checked: false,
   },
