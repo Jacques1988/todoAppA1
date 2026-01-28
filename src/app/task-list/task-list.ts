@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { Teaser } from '../shared/components/teaser/teaser';
 import { TaskComponent } from './task-component/task-component';
+import { TaskService } from '../services/task-service';
 
 @Component({
   selector: 'app-task-list',
@@ -10,4 +11,9 @@ import { TaskComponent } from './task-component/task-component';
 })
 export class TaskList {
   teaser = signal<string>('Task List');
+  tasks = inject(TaskService).getAllTasks();
+
+  /* ngOnInit() {
+    console.log(this.tasks());
+  } */
 }
