@@ -31,5 +31,6 @@ export class TaskService {
       }
       return task;
     });
+    console.log(this.taskList);
   }
 }
