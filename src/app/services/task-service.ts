@@ -10,6 +10,7 @@ export class TaskService {
   tasks = signal<Task[]>(taskList);
 
   getAllTasks() {
+    this.tasks.set(this.taskList);
     return this.tasks;
   }
 
@@ -31,6 +32,19 @@ export class TaskService {
       }
       return task;
     });
-    console.log(this.taskList);
+  }
+
+  filterCompleteTasks() {
+    const completedTasks = this.taskList.filter(
+      (task) => task.status === 'completed',
+    );
+    this.tasks.set(completedTasks);
+  }
+
+  filterIncompleteTasks() {
+    const incompletedTasks = this.taskList.filter(
+      (task) => task.status === 'incomplete',
+    );
+    this.tasks.set(incompletedTasks);
   }
 }

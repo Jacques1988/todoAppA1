@@ -22,7 +22,7 @@ export class NewTask {
 
   addTask() {
     const taskname = this.taskInput()!.nativeElement.value;
-    this.taskService.addTask(taskname);
     this.taskInput()!.nativeElement.value = '';
+    this.taskService.addTask(taskname);
   }
 }
